@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FUND MY LAPTOP</title>
-    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap.css"/>
     <title>Manage Campaign</title>
 </head>
 <body>
     <div class="nav-container container-fluid shadow-sm">
         <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
           <a class="navbar-brand" href="index.html">
-            <img src="img/Logo 01 Main 01.svg" width="81px" height="44px" />
+            <img src="img/layer1.png" width="81px" height="44px" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -218,9 +218,9 @@
         </div>
       </footer>
       
-      <script src="js/bootstrap-js/jquery.js"></script>
-      <script src="js/bootstrap-js/bootstrap.js"></script>
-      <script src="js/bootstrap-js/popper.js"></script>
+      <script src="../js/bootstrap-js/jquery.js"></script>
+      <script src="../js/bootstrap-js/bootstrap.js"></script>
+      <script src="../js/bootstrap-js/popper.js"></script>
 
 
 
@@ -314,6 +314,64 @@
             font-size: 14px;
           }
         }
+		/*footer styles */
+
+a {
+  color: white;
+}
+
+ul.nav li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+ul.social-footer-icons > * + * {
+  padding-left: 1em;
+}
+
+ul.bye li {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+ul.bye > * + * {
+  padding-left: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  div.bye {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  ul.bye {
+    flex-direction: column;
+    text-align: center;
+    order: -1;
+  }
+
+  ul.bye li {
+    padding-left: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+.credits-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .social-footer-icons-container {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .why {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+  }
+}
+
     </style>
 </body>
 </html>
