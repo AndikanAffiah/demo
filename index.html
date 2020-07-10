@@ -1,410 +1,362 @@
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-
-<section>
-    <aside>
-        <div class="app-title">
-            <div>
-                <span class="fund">FundMy</span><span class="laptop">Laptop</span> <span class="fund pl-3"><<<</span>
-            </div>
-        </div>
-        <div class="aside-bar-component">
-            <div>
-                <span class="icon dashboard"></span>
-                <span>Dashboard</span>
-            </div>
-            <div>
-                <span class="icon manager"></span>
-                <span>Manage users</span>
-            </div>
-
-            <div class="requests">
-                <div class="req">Requests</div>
-                <div>
-                    <div>
-                        <span class="icon vision"></span>
-                        <span>View Requests</span>
-                    </div>
-                    <div>
-                        <span class="icon review"></span>
-                        <span>Review Requests</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
-    <main>
-        <nav class="main-navbar">
-            <div>
-                <span class="ellipse"></span>
-                <span class="radio"></span>
-                <span>Hi, Alabi Samuel Seun</span>
-                <span class="pic"></span>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUND MY LAPTOP</title>
+	<link rel="stylesheet" href="bootstrap.css">
+    <title>Manage Campaign</title>
+</head>
+<body>
+    <div class="nav-container container-fluid shadow-sm">
+        <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="../../img/Logo 01 Main 01.svg" width="81px" height="44px" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link px-4 font-weight-bold" href="#">Lend</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 font-weight-bold" href="#">Borrow</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 font-weight-bold" href="about-us.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pl-md-4 font-weight-bold" href="login.html">
+                  <button class="btn btn-fml-secondary px-4">
+                    Login
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <div class="main-title">
-            <span>Requests</span>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-between py-3">
+            <div class="d-flex align-items-center"><span class="text-secondary pr-2">Main Dashboard</span> <span class="sign fw-500">&gt;</span> <span class="pl-2">Manage Campaign</span></div>
+            <div>
+                <button class="btn fml-bg-primary">Create New Campaign</button>
+            </div>
         </div>
 
-        <div class="main-content">
-            <div class="main-content-title">
-                <div>
-                    <span class="icon statistics"></span>
-                    <span>All Requests</span>
+        <div>
+            <div class="d-flex">
+                <div class="col-md-6 px-0">
+                    <img class="w-100 h-100 laptop-img" src="img/laptop.png" alt="">
                 </div>
-                <div>
-                    <button class="export-button">
-                        <span class="icon download"></span>
-                        <span>Export</span>
-                        <span class="icon down"></span>
-                    </button>
+                <div class="col-md-6 px-0">
+                    <div class="pl-4 pt-4">
+                        <h1 class="mb-4">Dell Inspiron Project</h1>
+                        <h2 class="">
+                            <span class="icon-money-bag pr-2"></span>
+                            <span>N177,000</span>
+                        </h2>
+                        <div class="pt-3 position-relative">
+                            <div class="progress border-rounded-30 height-10">
+                                <div class="progress-bar position-absolute border-rounded-30 fml-bg-primary height-10 shadow-sm-primary" role="progressbar" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fs-20 pt-2">20% of N885,000 goal</div>
+                        <div class="py-4 fs-20">
+                            <div class="fw-500">My Story:</div>
+                            <div>
+                                I want to use this funding to get a system so as to start
+                                my Career in the IT World. I believe having this will
+                                help me alot in my Career
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center fs-20">
+                            <div>
+                                <span class="mr-3">3 Lenders</span>
+                                <span class="dot"></span>
+                                <span class="mx-3">2 Donators</span>
+                                <span class="dot"></span>
+                                <span class="mx-3">50 Shares</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="options-bar">
-                <div id="search-box">
-                    <input type="text" id="search" placeholder="Search">
+            <div class="d-flex py-5">
+                <div class="mr-3">
+                    <button class="btn shadow-sm fml-bg-primary align-self-center fs-13"><span>End your campaign</span> <span class="icon icon-cancel ml-2"></span></button>
                 </div>
-                <div id="status">
-                    <span>Status</span>
-                    <select>
-                        <option value="Verified">Verified</option>
-                        <option value="Unverified">Unverified</option>
-                    </select>
+                <div class="mx-3">
+                    <button class="btn shadow-sm fml-primary-color bg-white rounded fs-13"><span>Edit your campaign</span> <span class="icon icon-pen ml-2"></span></button>
                 </div>
-                <div id="type">
-                    <span>Type</span>
-                    <select>
-                        <option value="Purchase">Purchase</option>
-                        <option value="Repairs">Repairs</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="list-content">
-                <div class="list-content-title">
-                    <div># *</div>
-                    <div>Requester Name</div>
-                    <div>Request Type</div>
-                    <div>Amount</div>
-                    <div>Status</div>
-                    <div>Review</div>
-                </div>
-                <div class="list-content-items">
-                    <div class="list-items">
-                        <div>
-                            <span class="triangle"></span>
-                            <span class="num">1</span>
-                        </div>
-                        <div>John Doe</div>
-                        <div>Repair</div>
-                        <div>#2000</div>
-                        <div>Verified</div>
-                        <div>
-                            <span class="accept">Accept</span>
-                            <span class="decline">Decline</span>
-                        </div>
-                    </div>
-                    <div class="list-items">
-                        <div>
-                            <span class="triangle"></span>
-                            <span class="num">2</span>
-                        </div>
-                        <div>John Doe</div>
-                        <div>Repair</div>
-                        <div>#2000</div>
-                        <div>Verified</div>
-                        <div>
-                            <span class="accept">Accept</span>
-                            <span class="decline">Decline</span>
-                        </div>
-                    </div>
-                    <div class="list-items">
-                        <div>
-                            <span class="triangle"></span>
-                            <span class="num">3</span>
-                        </div>
-                        <div>John Doe</div>
-                        <div>Repair</div>
-                        <div>#2000</div>
-                        <div>Verified</div>
-                        <div>
-                            <span class="accept">Accept</span>
-                            <span class="decline">Decline</span>
-                        </div>
-                    </div>
-                    <div class="list-items">
-                        <div>
-                            <span class="triangle"></span>
-                            <span class="num">4</span>
-                        </div>
-                        <div>John Doe</div>
-                        <div>Repair</div>
-                        <div>#2000</div>
-                        <div>Verified</div>
-                        <div>
-                            <span class="accept">Accept</span>
-                            <span class="decline">Decline</span>
-                        </div>
-                    </div>
-                    <div class="list-items">
-                        <div>
-                            <span class="triangle"></span>
-                            <span class="num">5</span>
-                        </div>
-                        <div>John Doe</div>
-                        <div>Repair</div>
-                        <div>#2000</div>
-                        <div>Verified</div>
-                        <div>
-                            <span class="accept">Accept</span>
-                            <span class="decline">Decline</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-footer">
-                    <div>10 <span class="down"></span></div>
-                    <div>Showing 1-5 of 5</div>
+                <div class="mx-3">
+                    <button class="btn shadow-sm fml-primary-color bg-white rounded fs-13"><span>Share your campaign</span> <span class="icon icon-share ml-2"></span></button>
                 </div>
             </div>
         </div>
-    </main>
-</section>
 
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .pl-3{
-        padding-left: 15px;
-    }
-    section{
-        font-family: "DM Sans";
-        display: flex;
-        /* flex-basis: 30 70; */
-    }
-    aside{
-        width: 25%;
-        min-height: 700px;
-        background-color: #2A3A64;
-        color: #e1e1e1;
-    }
-    .app-title{
-        height: 72px;
-        background-color: #fb3f5c;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-    }
-    .app-title span.fund{
-        color: #2A3A64;
-    }
-    .app-title span.laptop{
-        color: #e0e0e0;
-    }
-    .aside-bar-component{
-        padding-left: 30px;
-        margin-top: 50px;
-    }
-    .aside-bar-component > div, .requests > div > div, .main-content-title > div:first-of-type{
-        display: flex;
-        align-items: center;
-    }
-    .aside-bar-component > div > span, .requests > div > div > span, .main-content-title > div > span{
-        padding: 10px 5px;
-    }
-    span.icon{
-        width: 30px;
-    }
-    span.icon.dashboard{
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592814829/dashboard.svg");
-    }
-    span.icon.manager{
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592814829/manager.svg ");
-    }
-    span.icon.vision{
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592814829/vision.svg");
-    }
-    span.icon.review{
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592814829/review.svg");
-    }
-    .requests{
-        display: block!important;
-        padding-top: 30px;
-    }
-    .req{
-        margin: 0 0 30px -15px;
-    }
+        <div class="pt-4">
+            <div>Recent Involvements</div>
+            <div>
+                <div class="d-flex py-3 fml-bg-secondary mb-3 font-weight-bold">
+                    <div class="col-2 pl-5">Type</div>
+                    <div class="col-2">Funder's Name</div>
+                    <div class="col-2">Purpose</div>
+                    <div class="col-2">Amount</div>
+                    <div class="col-2">Payback period</div>
+                    <div class="col-2">Status</div>
+                </div>
+                <div class="shadow-light">
+                    <div class="d-flex fs-14 fw-500 py-3">
+                        <div class="col-2 pl-5">Lender</div>
+                        <div class="col-2">Adeyemi Adeola</div>
+                        <div class="col-2">Laptop Purchase</div>
+                        <div class="col-2">N250,000</div>
+                        <div class="col-2">6 months</div>
+                        <div class="col-2">Funded 2mins ago</div>
+                    </div>
+                    <div class="d-flex fs-14 fw-500 py-3 fml-bg-secondary-2">
+                        <div class="col-2 pl-5">Donation</div>
+                        <div class="col-2">Ajayi Dawudu</div>
+                        <div class="col-2">Laptop Purchase</div>
+                        <div class="col-2">N20,000</div>
+                        <div class="col-2">No payback</div>
+                        <div class="col-2">Donated 2hrs ago</div>
+                    </div>
+                    <div class="d-flex fs-14 fw-500 py-3">
+                        <div class="col-2 pl-5">Lender</div>
+                        <div class="col-2">Adeyemi Adeola</div>
+                        <div class="col-2">Laptop Purchase</div>
+                        <div class="col-2">N250,000</div>
+                        <div class="col-2">6 months</div>
+                        <div class="col-2">Funded 2mins ago</div>
+                    </div>
+                    <div class="d-flex fs-14 fw-500 py-3 fml-bg-secondary-2">
+                        <div class="col-2 pl-5">Lender</div>
+                        <div class="col-2">Felicica Esther</div>
+                        <div class="col-2">Laptop Purchase</div>
+                        <div class="col-2">N250,000</div>
+                        <div class="col-2">6 months</div>
+                        <div class="col-2">Funded 2mins ago</div>
+                    </div>
+                    <div class="d-flex fs-14 fw-500 py-3">
+                        <div class="col-2 pl-5">Lender</div>
+                        <div class="col-2">Adeyemi Adeola</div>
+                        <div class="col-2">Laptop Purchase</div>
+                        <div class="col-2">N250,000</div>
+                        <div class="col-2">6 months</div>
+                        <div class="col-2">Funded 2mins ago</div>
+                    </div>
+                    <div class="text-center py-2">
+                        <button class="btn fml-bg-primary fs-14 px-4">View more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
-
-    main{
-        width: 75%;
-        min-height: 700px;
-        background-color: #e5e5e5;
-        color: #2a3a64;
-        font-weight: 600;
-    }
-    .main-navbar{
-        height: 72px;
-        font-size: 18px;
-        background-color: #fff;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        border-bottom: 1px solid #e0e0e0;
-    }
-    .main-navbar > div{
-        display: flex;
-        align-items: center;
-    }
-    .main-navbar > div > *{
-        margin: 0 10px;
-    }
-    .main-title{
-        height: 50px;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-    }
-    .main-title span{
-        padding: 0 0 0 50px;
-    }
-    .main-content{
-        margin: 15px;
-        background-color: #fff;
-    }
-    .main-content-title{
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #e0e0e0;
-        padding: 10px 50px;
-    }
-    
-    span.statistics{
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592820645/statistics.svg");
-    }
-    span.download{
-        width: 24px;
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592820645/download.svg");
-    }
-    span.down{
-        width: 18px;
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592820645/down.svg");
-    }
-    span.ellipse{
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592820646/ellipse.svg");
-    }
-    span.radio{
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592820645/radio.svg");
-    }
-    span.pic{
-        content: "";
-        background-color: #2A3A64;
-        width: 48px;
-        height: 48px;
-        border: 2px solid #2a3a64;
-        border-radius: 50%;
-    }
-    .export-button{
-        display: flex;
-        align-items: center;
-        border: 1px solid #e2e2e2;
-        border-radius: 7px;
-        padding: 3px;
-        color: #a1a1a1;
-        background-color: #fff;
-    }
-    .export-button > span{
-        padding: 0 2px;
-    }
-    .options-bar{
-        display: flex;
-        justify-content: center;
-        margin: 40px 0;
-    }
-    .options-bar > div{
-        width: 33%;
-    }
-    .options-bar input, .options-bar select{
-        height: 40px;
-        width: 70%;
-        border: none;
-        color: #2a3a64;
-        font-weight: 600;
-        font-size: 20px;
-    }
-    .options-bar input{
-        width: 90%;
-        border: 2px solid #a6a6a6;
-        border-radius: 10px;
-    }
-    #search-box{
-        margin-left: 50px;
-    }
-    #search-box > input::placeholder, #status > span, #type > span{
-        color: #a1a1a1;
-    }
-
-    .list-content-title, .list-items{
-        display: flex;
-        justify-content: center;
-    }
-    .list-content-title > div, .list-items > div{
-        width: 15%;
-    }
-    .list-content-title > div:first-of-type, .list-items > div:first-of-type{
-        text-align: center;
-    }
-
-    .list-items {
-        font-weight: 500;
-        color: #a0a0a0;
-        padding: 15px 0;
-        font-size: 20px;
-        border-bottom: 1px solid #e5e5e5;
-    }
-    .list-items > div:first-of-type{
-        display: flex;
-        align-items: center;
-    }
-
-    span.triangle{
-        content: url("https://res.cloudinary.com/kyrioxlamda/image/upload/v1592820645/triangle.svg");
-        width: 24px;
-        padding: 0 10 0 0px;
-    }
-    span.num{
-        padding: 0 0 0 40px;
-        
-    }
-    span.accept, span.decline{
-        padding: 5px;
-        border: none;
-        border-radius: 5px;
-        font-size: 14px;
-        color: #f0f0f0;
-    }
-    span.accept{
-        background-color: #57B894;
-    }
-    span.decline{
-        background-color: #FB3F5C;
-    }
-    .content-footer{
-        display: flex;
-        padding: 20px 55px;
-        align-items: center;
-    }
-    .content-footer > div:first-of-type{
-        background-color: #e5e5e5;
-        padding: 8px 12px;
-        text-align: center;
-        margin: 0 10px 0 0;
-    }
-</style>
+    </div>
+	
+	
+	<footer class="footer container-fluid bg-fml-primary pt-4 pt-md-5 pb-3 mt-5">
+        <div class="footer-li container">
+          <div class="row mx-0 d-none d-md-flex mb-3">
+            <a href="#" class="footer-logo">
+              <img src="../../img/logo-footer.svg" alt="" width="154px" height="80px" />
+            </a>
+          </div>
+          <div class="row flex-column flex-md-row footer-links mx-0 justify-content-center justify-content-md-between text-center text-md-left">
+            <ul class="nav flex-column order-3 order-md-1 why mt-4 pt-4 pt-md-0 mt-md-0">
+              <li><a href="#">23, Intel Chip, Silicon Valley</a></li>
+              <li><a href="#">info@fundmylaptop.com</a></li>
+              <li><a href="#">09023144819</a></li>
+            </ul>
+            <ul class="nav flex-column mt-md-3 order-1 order-md-2">
+              <li><a href="aboutus.html">Why choose fundmylaptop?</a></li>
+              <li><a href="aboutus.html">How P2P lending works</a></li>
+            </ul>
+            <ul class="nav flex-column mt-md-3 order-2 order-md-3">
+              <li><a href="about-us.html">About fundmylaptop</a></li>
+              <li><a href="contact-us.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="row mx-0 mt-4 mt-md-2 pt-4 pt-md-5 social-footer-icons-container text-center justify-content-center justify-content-md-start">
+            <ul class="nav social-footer-icons">
+              <li>
+                <a href=""><img src="../img/brandico_facebook.svg" /></a>
+              </li>
+              <li>
+                <a href=""><img src="../img/ant-design_instagram-outlined.svg" /></a>
+              </li>
+              <li>
+                <a href=""><img src="../img/ant-design_twitter-outlined.svg" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container mt-4 mt-md-3 text-light">
+          <div class="row flex-column flex-md-row mx-0 credits-container pt-3 justify-content-md-between justify-content-center">
+            <p class="mb-0 text-center text-md-left">
+              2020 &copy; Copyright All Rights Reserved
+            </p>
+  
+            <ul class="nav bye">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+      <script src="../../js/bootstrap-js/jquery.js"></script>
+      <script src="../../js/bootstrap-js/bootstrap.js"></script>
+      <script src="../../js/bootstrap-js/popper.js"></script>
 
 
+    <style>
+        .fs-13{
+            font-size: 13px!important;
+        }
+        .fs-14{
+            font-size: 14px!important;
+        }
+        .fs-20{
+            font-size: 20px;
+        }
+        .fw-500{
+            font-weight: 500;
+        }
+        .height-400{
+            height: 400px;
+        }
+        .height-10{
+            height: 10px;
+        }
+        .shadow-sm{
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)!important;
+        }
+        .shadow-light{
+            box-shadow: 0px 3px 20px rgba(162, 14, 14, 0.059);
+        }
+        .shadow-sm-primary{
+            z-index: 1;
+            box-shadow: 0px 4px 10px #fb3f5ca6;
+        }
+        .border-rounded-30{
+            border-radius: 30px;
+        }
+        .laptop-img{
+            object-fit: cover;
+        }
+        .icon{
+            width: 12px;
+            height: 12px;
+        }
+        .icon-cancel{
+            content: url("img/cancel.svg");
+        }
+        .icon-pen{
+            content: url("img/pen.svg");
+        }
+        .icon-share{
+            content: url("img/share.svg");
+        }
+        .icon-money-bag{
+            content: url("img/money-bag.svg");
+        }
+        .fml-primary-color{
+            color: #FB3F5C;
+        }
+        .fml-bg-primary{
+            background-color: #FB3F5C;
+            color: white;
+        }
+        .fml-bg-secondary{
+            background-color: #FFE0E5;
+        }
+        .fml-bg-secondary-2{
+            background-color: #fff0f0;
+        }
+        .fml-bg-secondary-2:hover{
+          background-color: #FFE0E5;
+        }
+        .sign{
+            font-size: 20px;
+        }
+        .dot{
+            content: "";
+            height: 5px!important;
+            width: 5px!important;
+            border-radius: 2px;
+            margin-bottom: 3px;
+            background-color: #FB3F5C;
+            display: inline-block;
+        }
+		
+		/*footer styles */
+
+a {
+  color: white;
+}
+
+ul.nav li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+ul.social-footer-icons > * + * {
+  padding-left: 1em;
+}
+
+ul.bye li {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+ul.bye > * + * {
+  padding-left: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  div.bye {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  ul.bye {
+    flex-direction: column;
+    text-align: center;
+    order: -1;
+  }
+
+  ul.bye li {
+    padding-left: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+.credits-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .social-footer-icons-container {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .why {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+  }
+}
+
+    </style>
+</body>
+</html>
